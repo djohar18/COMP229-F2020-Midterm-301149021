@@ -8,7 +8,7 @@
  <main class="container">
     <div class="jumbotron">
       <h1 class="display-4">Welcome to the <%= title %> page</h1>
-        <form style="text-align: start;" id="form" action="/book-list/eidt/<%=Book.id%>" method="POST">
+        <form style="text-align: start;" id="form" action="/book-list/edit/<%=Book.id%>" method="POST">
         <div class="col-md-12 mb-3">
           <label for="nameText" class="form-label">Name</label>
           <input type="text" class="form-control" value="<%= Book.name %>" name="name" id="nameText" placeholder="Name of Book" required>
