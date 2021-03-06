@@ -21,15 +21,10 @@ router.post('/add', bookController.processAddPage);
 /* GET Route for displaying the Edit page - UPDATE Operation */
 router.get('/edit/:id', bookController.displayEditPage);
 
-/* 
-* add your code to 
-* POST Route for processing the Edit page - UPDATE Operation 
-*/
+/* POST Route for processing the Edit page - UPDATE Operation */
 router.post('/edit/:id', bookController.processEditPage);
 
-/* add your code to 
-*  GET to perform  Deletion - DELETE Operation 
-*/
+/* GET to perform  Deletion - DELETE Operation */
 router.get('/delete/:id', bookController.deleteBook);
 
 module.exports = router;
