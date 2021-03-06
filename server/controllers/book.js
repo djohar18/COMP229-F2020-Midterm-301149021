@@ -20,10 +20,12 @@ module.exports.displayBookList = (req, res, next) => {
     });
 }
 
+// display the add page
 module.exports.displayAddPage = (req, res, next) => {
     res.render('book/add', {title: 'Add Book'})          
 }
 
+//process the add page
 module.exports.processAddPage = (req, res, next) => {
     let newBook = Book({
         "name": req.body.name,
