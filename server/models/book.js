@@ -1,3 +1,8 @@
+/*   File name: books.js
+     Created By: Divyanshu Johar
+     Student ID: 301149021
+*/
+
 let mongoose = require('mongoose');
 
 // create a model class

@@ -48,9 +48,7 @@ module.exports.processAddPage = (req, res, next) => {
 
 }
 
-/*
-Add your code here to display EDIT
-*/
+// display edit page
 module.exports.displayEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -67,9 +65,7 @@ module.exports.displayEditPage = (req, res, next) => {
     });
 }
 
-/*
-Add your code here to process EDIT
-*/
+// process edit page
 module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -95,9 +91,7 @@ module.exports.processEditPage = (req, res, next) => {
 }
 
 
-/*
-Add your code here to perform DELETE operation
-*/
+// process delete request
 module.exports.deleteBook = (req, res, next) => {
     let id = req.params.id;
     Book.remove({_id:id}, (err) => {
